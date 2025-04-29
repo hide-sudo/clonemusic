@@ -1,9 +1,9 @@
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.misc import SUDOERS, db
-from VIP_INNOCENT.utils.database import (
+from devclone import app
+from devclone.misc import SUDOERS, db
+from devclone.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
