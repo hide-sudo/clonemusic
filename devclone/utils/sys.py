@@ -2,8 +2,8 @@ import time
 
 import psutil
 
-from VIP_INNOCENT.misc import _boot_
-from VIP_INNOCENT.utils.formatters import get_readable_time
+from devclone.misc import _boot_
+from devclone.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():
