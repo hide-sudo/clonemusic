@@ -3,18 +3,18 @@ from typing import Union
 from pyrogram import filters, types, Client
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.utils import first_page, second_page
-from VIP_INNOCENT.utils.database import get_lang
-from VIP_INNOCENT.utils.decorators.language import LanguageStart, languageCB
-from VIP_INNOCENT.utils.inline.help import help_back_markup, private_help_panel
+from devclone import app
+from devclone.utils import first_page, second_page
+from devclone.utils.database import get_lang
+from devclone.utils.decorators.language import LanguageStart, languageCB
+from devclone.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, HELP_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
-from VIP_INNOCENT.misc import SUDOERS
+from devclone.misc import SUDOERS
 from time import time
 import asyncio
-from VIP_INNOCENT.utils.extraction import extract_user
-from VIP_INNOCENT.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
+from devclone.utils.extraction import extract_user
+from devclone.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
