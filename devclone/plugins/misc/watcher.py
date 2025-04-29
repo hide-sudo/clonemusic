@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.core.call import INNOCENT
+from devclone import app
+from devclone.core.call import INNOCENT
 
 welcome = 20
 close = 30
