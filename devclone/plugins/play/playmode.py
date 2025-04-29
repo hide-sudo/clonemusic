@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from VIP_INNOCENT.utils.decorators import language
-from VIP_INNOCENT.utils.inline.settings import playmode_users_markup
+from devclone import app
+from devclone.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from devclone.utils.decorators import language
+from devclone.utils.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 
