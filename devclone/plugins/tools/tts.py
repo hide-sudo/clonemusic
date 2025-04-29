@@ -3,7 +3,7 @@ import io
 from gtts import gTTS
 from pyrogram import filters
 
-from VIP_INNOCENT import app
+from devclone import app
 
 
 @app.on_message(filters.command("tts"))
