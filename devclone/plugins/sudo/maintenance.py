@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.misc import SUDOERS
-from VIP_INNOCENT.utils.database import (
+from devclone import app
+from devclone.misc import SUDOERS
+from devclone.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
