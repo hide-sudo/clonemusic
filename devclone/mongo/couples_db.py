@@ -1,4 +1,4 @@
-from VIP_INNOCENT.utils.mongo import db
+from devclone.utils.mongo import db
 
 coupledb = db.couple
 
