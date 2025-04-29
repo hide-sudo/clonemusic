@@ -10,15 +10,15 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from VIP_INNOCENT import app
-from VIP_INNOCENT.misc import HAPP, SUDOERS, XCB
-from VIP_INNOCENT.utils.database import (
+from devclone import app
+from devclone.misc import HAPP, SUDOERS, XCB
+from devclone.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from VIP_INNOCENT.utils.decorators.language import language
-from VIP_INNOCENT.utils.pastebin import INNOCENTBin
+from devclone.utils.decorators.language import language
+from devclone.utils.pastebin import INNOCENTBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
