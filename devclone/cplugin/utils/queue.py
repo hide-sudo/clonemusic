@@ -1,4 +1,4 @@
-from VIP_INNOCENT.misc import clonedb
+from devclone.misc import clonedb
 
 
 async def put(
