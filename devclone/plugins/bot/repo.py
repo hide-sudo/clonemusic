@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from VIP_INNOCENT import app
+from devclone import app
 
 BOT_USERNAME = "NAKSH_X_MUSICBOT"
 
