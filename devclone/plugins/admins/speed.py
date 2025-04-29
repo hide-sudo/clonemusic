@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import SUDOERS, db
-from VIP_INNOCENT.utils import AdminRightsCheck
-from VIP_INNOCENT.utils.database import is_active_chat, is_nonadmin_chat
-from VIP_INNOCENT.utils.decorators.language import languageCB
-from VIP_INNOCENT.utils.inline import close_markup, speed_markup
+from devclone import app
+from devclone.core.call import INNOCENT
+from devclone.misc import SUDOERS, db
+from devclone.utils import AdminRightsCheck
+from devclone.utils.database import is_active_chat, is_nonadmin_chat
+from devclone.utils.decorators.language import languageCB
+from devclone.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
