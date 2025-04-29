@@ -1,8 +1,8 @@
-from VIP_INNOCENT.core.userbot import assistants
-from VIP_INNOCENT import userbot as us, app
+from devclone.core.userbot import assistants
+from devclone import userbot as us, app
 from pyrogram import filters
 from pyrogram.types import Message
-from VIP_INNOCENT.misc import SUDOERS
+from devclone.misc import SUDOERS
 from config import BANNED_USERS, OWNER_ID
 
 
