@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.misc import SUDOERS
-from VIP_INNOCENT.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from VIP_INNOCENT.utils.decorators.language import language
+from devclone import app
+from devclone.misc import SUDOERS
+from devclone.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from devclone.utils.decorators.language import language
 from config import BANNED_USERS
 
 
