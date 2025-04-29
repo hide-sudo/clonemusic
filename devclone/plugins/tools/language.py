@@ -2,9 +2,9 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.utils.database import get_lang, set_lang
-from VIP_INNOCENT.utils.decorators import ActualAdminCB, language, languageCB
+from devclone import app
+from devclone.utils.database import get_lang, set_lang
+from devclone.utils.decorators import ActualAdminCB, language, languageCB
 from config import BANNED_USERS
 from strings import get_string, languages_present
 
