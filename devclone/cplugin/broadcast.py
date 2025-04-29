@@ -4,22 +4,22 @@ from pyrogram import filters, Client
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.misc import SUDOERS
-from VIP_INNOCENT.utils.database import (
+from devclone import app
+from devclone.misc import SUDOERS
+from devclone.utils.database import (
     get_client,
     get_served_chats_clone,
     get_served_users_clone,
 )
-from VIP_INNOCENT.utils.decorators.language import language
-from VIP_INNOCENT.utils.formatters import alpha_to_int
+from devclone.utils.decorators.language import language
+from devclone.utils.formatters import alpha_to_int
 from config import adminlist
 import random
 from typing import Dict, List, Union
 
-from VIP_INNOCENT import userbot
-from VIP_INNOCENT.core.mongo import mongodb, pymongodb
-from VIP_INNOCENT.utils.database.clonedb import get_owner_id_from_db, check_bot_premium
+from devclone import userbot
+from devclone.core.mongo import mongodb, pymongodb
+from devclone.utils.database.clonedb import get_owner_id_from_db, check_bot_premium
 from config import SUPPORT_CHAT, OWNER_ID
 
 authdb = mongodb.adminauth
