@@ -2,13 +2,13 @@ from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.types import Message
 from strings import get_string, helpers
-from VIP_INNOCENT import app
+from devclone import app
 from pyrogram.types import InputMediaVideo
-from VIP_INNOCENT.misc import SUDOERS
-from VIP_INNOCENT.utils.database import add_sudo, remove_sudo
-from VIP_INNOCENT.utils.decorators.language import language
-from VIP_INNOCENT.utils.extraction import extract_user
-from VIP_INNOCENT.utils.inline import close_markup
+from devclone.misc import SUDOERS
+from devclone.utils.database import add_sudo, remove_sudo
+from devclone.utils.decorators.language import language
+from devclone.utils.extraction import extract_user
+from devclone.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
