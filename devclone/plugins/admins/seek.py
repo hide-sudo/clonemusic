@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIP_INNOCENT import YouTube, app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils import AdminRightsCheck, seconds_to_min
-from VIP_INNOCENT.utils.inline import close_markup
+from devclone import YouTube, app
+from devclone.core.call import INNOCENT
+from devclone.misc import db
+from devclone.utils import AdminRightsCheck, seconds_to_min
+from devclone.utils.inline import close_markup
 from config import BANNED_USERS
 
 
