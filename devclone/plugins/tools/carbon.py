@@ -1,6 +1,6 @@
 import aiohttp
 from io import BytesIO
-from VIP_INNOCENT import app
+from devclone import app
 from pyrogram import filters
 
 
