@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.utils.database import is_on_off
+from devclone import app
+from devclone.utils.database import is_on_off
 from config import LOGGER_ID
 
 
