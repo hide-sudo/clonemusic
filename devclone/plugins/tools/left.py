@@ -1,4 +1,4 @@
-from VIP_INNOCENT import app
+from devclone import app
 from pyrogram import Client, filters
 from pyrogram.errors import RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
@@ -52,8 +52,8 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "VIP_INNOCENT/assets/userinfo.png"
-font_path = "VIP_INNOCENT/assets/hiroko.ttf"
+bg_path = "devclone/assets/userinfo.png"
+font_path = "devclone/assets/hiroko.ttf"
 
 # --------------------------------------------------------------------------------- #
 
