@@ -7,12 +7,12 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from VIP_INNOCENT import app
-from VIP_INNOCENT.misc import _boot_
-from VIP_INNOCENT.plugins.sudo.sudoers import sudoers_list
-from VIP_INNOCENT.utils.database import get_served_chats, get_served_users, get_sudoers
-from VIP_INNOCENT.utils import bot_sys_stats
-from VIP_INNOCENT.utils.database import (
+from devclone import app
+from devclone.misc import _boot_
+from devclone.plugins.sudo.sudoers import sudoers_list
+from devclone.utils.database import get_served_chats, get_served_users, get_sudoers
+from devclone.utils import bot_sys_stats
+from devclone.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -20,9 +20,9 @@ from VIP_INNOCENT.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from VIP_INNOCENT.utils.decorators.language import LanguageStart
-from VIP_INNOCENT.utils.formatters import get_readable_time
-from VIP_INNOCENT.utils.inline import help_pannel, private_panel, start_panel
+from devclone.utils.decorators.language import LanguageStart
+from devclone.utils.formatters import get_readable_time
+from devclone.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS, STREAMI_PICS, GREET
 from strings import get_string
 
