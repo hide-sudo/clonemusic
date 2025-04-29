@@ -1,14 +1,14 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from VIP_INNOCENT import app
-from VIP_INNOCENT.core.call import INNOCENT
+from devclone import app
+from devclone.core.call import INNOCENT
 
-from VIP_INNOCENT.utils.decorators import AdminRightsCheck
-from VIP_INNOCENT.utils.inline import close_markup
+from devclone.utils.decorators import AdminRightsCheck
+from devclone.utils.inline import close_markup
 from config import BANNED_USERS
-from VIP_INNOCENT import userbot
-from VIP_INNOCENT.core.mongo import mongodb, pymongodb
+from devclone import userbot
+from devclone.core.mongo import mongodb, pymongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
