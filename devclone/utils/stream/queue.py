@@ -1,8 +1,8 @@
 import asyncio
 from typing import Union
 
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils.formatters import check_duration, seconds_to_min
+from devclone.misc import db
+from devclone.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 
