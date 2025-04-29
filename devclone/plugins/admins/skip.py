@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from VIP_INNOCENT import YouTube, app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils.database import get_loop
-from VIP_INNOCENT.utils.decorators import AdminRightsCheck
-from VIP_INNOCENT.utils.inline import close_markup, stream_markup
-from VIP_INNOCENT.utils.stream.autoclear import auto_clean
-from VIP_INNOCENT.utils.thumbnails import get_thumb
+from devclone import YouTube, app
+from devclone.core.call import INNOCENT
+from devclone.misc import db
+from devclone.utils.database import get_loop
+from devclone.utils.decorators import AdminRightsCheck
+from devclone.utils.inline import close_markup, stream_markup
+from devclone.utils.stream.autoclear import auto_clean
+from devclone.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
