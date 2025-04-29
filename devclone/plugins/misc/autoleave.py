@@ -4,15 +4,15 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from VIP_INNOCENT import app
-from VIP_INNOCENT.core.call import INNOCENT, autoend
-from VIP_INNOCENT.utils.database import get_client, is_active_chat, is_autoend
+from devclone import app
+from devclone.core.call import INNOCENT, autoend
+from devclone.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from VIP_INNOCENT.core.userbot import assistants
+            from devclone.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
