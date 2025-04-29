@@ -1,8 +1,8 @@
 from enum import Enum, auto
-from VIP_INNOCENT import app
+from devclone import app
 from pyrogram.types import InlineKeyboardMarkup, Message
-from VIP_INNOCENT.utils.msg_types import button_markdown_parser
-from VIP_INNOCENT.utils.notes_func import NoteFillings
+from devclone.utils.msg_types import button_markdown_parser
+from devclone.utils.notes_func import NoteFillings
 from emojis import decode
 from pyrogram.types import Message
 
