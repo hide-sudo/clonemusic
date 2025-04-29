@@ -2,16 +2,16 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from VIP_INNOCENT import YouTube, app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils.database import get_loop
-from VIP_INNOCENT.utils.decorators import AdminRightsCheck
-from VIP_INNOCENT.utils.inline import close_markup, stream_markup, stream_markup2
-from VIP_INNOCENT.utils.stream.autoclear import auto_clean
-from VIP_INNOCENT.utils.thumbnails import get_thumb
+from  import YouTube, app
+from .core.call import INNOCENT
+from .misc import db
+from .utils.database import get_loop
+from .utils.decorators import AdminRightsCheck
+from .utils.inline import close_markup, stream_markup, stream_markup2
+from .utils.stream.autoclear import auto_clean
+from .utils.thumbnails import get_thumb
 from config import BANNED_USERS
-from VIP_INNOCENT.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
+from .utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 
 @Client.on_message(
