@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from VIP_INNOCENT import LOGGER, YouTube, app
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils.database import (
+from devclone import LOGGER, YouTube, app
+from devclone.misc import db
+from devclone.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,12 +31,12 @@ from VIP_INNOCENT.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from VIP_INNOCENT.utils.exceptions import AssistantErr
-from VIP_INNOCENT.utils.formatters import check_duration, seconds_to_min, speed_converter
-from VIP_INNOCENT.utils.inline.play import stream_markup
-from VIP_INNOCENT.utils.stream.autoclear import auto_clean
+from devclone.utils.exceptions import AssistantErr
+from devclone.utils.formatters import check_duration, seconds_to_min, speed_converter
+from devclone.utils.inline.play import stream_markup
+from devclone.utils.stream.autoclear import auto_clean
 from strings import get_string
-from VIP_INNOCENT.utils.thumbnails import get_thumb
+from devclone.utils.thumbnails import get_thumb
 
 autoend = {}
 counter = {}
@@ -51,7 +51,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="VIP_INNOCENTAss1",
+            name="devcloneAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
