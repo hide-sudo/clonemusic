@@ -5,15 +5,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from VIP_INNOCENT import Carbon, YouTube, app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils.database import add_active_video_chat, is_active_chat
-from VIP_INNOCENT.utils.exceptions import AssistantErr
-from VIP_INNOCENT.utils.inline import aq_markup, close_markup, stream_markup
-from VIP_INNOCENT.utils.stream.queue import put_queue, put_queue_index
-from VIP_INNOCENT.utils.pastebin import INNOCENTBin
-from VIP_INNOCENT.utils.thumbnails import get_thumb
+from devclone import Carbon, YouTube, app
+from devclone.core.call import INNOCENT
+from devclone.misc import db
+from devclone.utils.database import add_active_video_chat, is_active_chat
+from devclone.utils.exceptions import AssistantErr
+from devclone.utils.inline import aq_markup, close_markup, stream_markup
+from devclone.utils.stream.queue import put_queue, put_queue_index
+from devclone.utils.pastebin import INNOCENTBin
+from devclone.utils.thumbnails import get_thumb
 
 
 async def stream(
