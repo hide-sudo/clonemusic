@@ -3,10 +3,10 @@ from telegram import CallbackQuery
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from VIP_INNOCENT import YouTube, app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import SUDOERS, db
-from VIP_INNOCENT.utils.database import (
+from devclone import YouTube, app
+from devclone.core.call import INNOCENT
+from devclone.misc import SUDOERS, db
+from devclone.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -23,12 +23,12 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
     UserNotParticipant,
 )
-from VIP_INNOCENT.utils.database import get_assistant
-from VIP_INNOCENT.utils.decorators.language import languageCB
-from VIP_INNOCENT.utils.formatters import seconds_to_min
-from VIP_INNOCENT.utils.inline import close_markup, stream_markup, stream_markup_timer
-from VIP_INNOCENT.utils.stream.autoclear import auto_clean
-from VIP_INNOCENT.utils.thumbnails import get_thumb
+from devclone.utils.database import get_assistant
+from devclone.utils.decorators.language import languageCB
+from devclone.utils.formatters import seconds_to_min
+from devclone.utils.inline import close_markup, stream_markup, stream_markup_timer
+from devclone.utils.stream.autoclear import auto_clean
+from devclone.utils.thumbnails import get_thumb
 import config
 from config import (
     BANNED_USERS,
