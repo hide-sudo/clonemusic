@@ -1,7 +1,7 @@
 import asyncio
 
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils.database import get_active_chats, is_music_playing
+from devclone.misc import db
+from devclone.utils.database import get_active_chats, is_music_playing
 
 
 async def timer():
