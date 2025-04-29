@@ -6,8 +6,8 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-from VIP_INNOCENT import app
-from VIP_INNOCENT.utils.formatters import (
+from devclone import app
+from devclone.utils.formatters import (
     check_duration,
     convert_bytes,
     get_readable_time,
