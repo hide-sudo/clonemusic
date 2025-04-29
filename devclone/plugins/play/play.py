@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from VIP_INNOCENT import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app, LOGGER
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.utils import seconds_to_min, time_to_seconds
-from VIP_INNOCENT.utils.channelplay import get_channeplayCB
-from VIP_INNOCENT.utils.decorators.language import languageCB
-from VIP_INNOCENT.utils.decorators.play import PlayWrapper
-from VIP_INNOCENT.utils.formatters import formats
-from VIP_INNOCENT.utils.inline import (
+from devclone import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app, LOGGER
+from devclone.core.call import INNOCENT
+from devclone.utils import seconds_to_min, time_to_seconds
+from devclone.utils.channelplay import get_channeplayCB
+from devclone.utils.decorators.language import languageCB
+from devclone.utils.decorators.play import PlayWrapper
+from devclone.utils.formatters import formats
+from devclone.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from VIP_INNOCENT.utils.logger import play_logs
-from VIP_INNOCENT.utils.stream.stream import stream
+from devclone.utils.logger import play_logs
+from devclone.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
