@@ -59,7 +59,7 @@ speedtest-cli
 SpeechRecognition
 spotipy
 telegraph
-telethon==1.33.1
+telethon==1.40.0
 tgcrypto
 unidecode
 wget
