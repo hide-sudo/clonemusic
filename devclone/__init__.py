@@ -1,8 +1,8 @@
-from VIP_INNOCENT.core.bot import INNOCENT
-from VIP_INNOCENT.core.dir import dirr
-from VIP_INNOCENT.core.git import git
-from VIP_INNOCENT.core.userbot import Userbot
-from VIP_INNOCENT.misc import dbb, heroku
+from devclone.core.bot import INNOCENT
+from devclone.core.dir import dirr
+from devclone.core.git import git
+from devclone.core.userbot import Userbot
+from devclone.misc import dbb, heroku
 from pyrogram import Client
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
