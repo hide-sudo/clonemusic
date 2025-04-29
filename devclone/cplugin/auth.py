@@ -1,16 +1,16 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.utils import extract_user, int_to_alpha
-from VIP_INNOCENT.utils.database import (
+from devclone import app
+from devclone.utils import extract_user, int_to_alpha
+from devclone.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from VIP_INNOCENT.utils.decorators import AdminActual, language
-from VIP_INNOCENT.utils.inline import close_markup
+from devclone.utils.decorators import AdminActual, language
+from devclone.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
