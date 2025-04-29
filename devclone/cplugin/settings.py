@@ -8,8 +8,8 @@ from pyrogram.types import (
     Message,
 )
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.utils.database import (
+from devclone import app
+from devclone.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -25,15 +25,15 @@ from VIP_INNOCENT.utils.database import (
     skip_off,
     skip_on,
 )
-from VIP_INNOCENT.utils.decorators.admins import ActualAdminCB
-from VIP_INNOCENT.utils.decorators.language import language, languageCB
-from VIP_INNOCENT.utils.inline.settings import (
+from devclone.utils.decorators.admins import ActualAdminCB
+from devclone.utils.decorators.language import language, languageCB
+from devclone.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from VIP_INNOCENT.utils.inline.start import private_panel
+from devclone.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
 
