@@ -5,25 +5,25 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
-from VIP_INNOCENT.utils.database import get_assistant
+from devclone.utils.database import get_assistant
 import config
-from VIP_INNOCENT import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import SUDOERS
-from VIP_INNOCENT.utils.inline import panel_markup_clone
-from VIP_INNOCENT.utils import seconds_to_min, time_to_seconds
-from VIP_INNOCENT.utils.channelplay import get_channeplayCB
-from VIP_INNOCENT.utils.decorators.language import languageCB
-from VIP_INNOCENT.utils.decorators.play import CPlayWrapper
-from VIP_INNOCENT.utils.formatters import formats
-from VIP_INNOCENT.utils.inline import (
+from devclone import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from devclone.core.call import INNOCENT
+from devclone.misc import SUDOERS
+from devclone.utils.inline import panel_markup_clone
+from devclone.utils import seconds_to_min, time_to_seconds
+from devclone.utils.channelplay import get_channeplayCB
+from devclone.utils.decorators.language import languageCB
+from devclone.utils.decorators.play import CPlayWrapper
+from devclone.utils.formatters import formats
+from devclone.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from VIP_INNOCENT.utils.database import (
+from devclone.utils.database import (
     add_served_chat_clone,
     add_served_user_clone,
     blacklisted_chats,
@@ -31,11 +31,11 @@ from VIP_INNOCENT.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from VIP_INNOCENT.utils.logger import play_logs, clone_bot_logs
-from VIP_INNOCENT.cplugin.setinfo import get_logging_status, get_log_channel
+from devclone.utils.logger import play_logs, clone_bot_logs
+from devclone.cplugin.setinfo import get_logging_status, get_log_channel
 from config import BANNED_USERS, lyrical
 from time import time
-from VIP_INNOCENT.utils.extraction import extract_user
+from devclone.utils.extraction import extract_user
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -818,12 +818,12 @@ from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from VIP_INNOCENT import Carbon, YouTube
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils.database import add_active_video_chat, is_active_chat
-from VIP_INNOCENT.utils.exceptions import AssistantErr
-from VIP_INNOCENT.utils.inline import (
+from devclone import Carbon, YouTube
+from devclone.core.call import INNOCENT
+from devclone.misc import db
+from devclone.utils.database import add_active_video_chat, is_active_chat
+from devclone.utils.exceptions import AssistantErr
+from devclone.utils.inline import (
     aq_markup,
     queuemarkup,
     close_markup,
@@ -831,10 +831,10 @@ from VIP_INNOCENT.utils.inline import (
     stream_markup2,
     panel_markup_4,
 )
-from VIP_INNOCENT.utils.pastebin import INNOCENTBin
-from VIP_INNOCENT.utils.stream.queue import put_queue, put_queue_index
+from devclone.utils.pastebin import INNOCENTBin
+from devclone.utils.stream.queue import put_queue, put_queue_index
 from youtubesearchpython.__future__ import VideosSearch
-from VIP_INNOCENT.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
+from devclone.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 
 async def stream(
