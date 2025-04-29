@@ -2,14 +2,14 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram import filters, Client
-from VIP_INNOCENT import app
-from VIP_INNOCENT.misc import SUDOERS
-from VIP_INNOCENT.utils.decorators.language import language
+from devclone import app
+from devclone.misc import SUDOERS
+from devclone.utils.decorators.language import language
 
-from VIP_INNOCENT.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel, check_bot_premium
+from devclone.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel, check_bot_premium
 from config import SUPPORT_CHAT, OWNER_ID
 
-from VIP_INNOCENT.utils.database import clonebotdb
+from devclone.utils.database import clonebotdb
 
 
 #set clone bot support channel
