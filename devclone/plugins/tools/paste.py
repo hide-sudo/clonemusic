@@ -8,9 +8,9 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
 from aiohttp import ClientSession
-from VIP_INNOCENT import app
-from VIP_INNOCENT.utils.errors import capture_err
-from VIP_INNOCENT.utils.pastebin import INNOCENTBin
+from devclone import app
+from devclone.utils.errors import capture_err
+from devclone.utils.pastebin import INNOCENTBin
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
 
