@@ -8,13 +8,13 @@ from pyrogram.errors import (
     UserNotParticipant,
 )
 import config
-from VIP_INNOCENT.utils.database import get_assistant
+from devclone.utils.database import get_assistant
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from VIP_INNOCENT import YouTube, app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import SUDOERS, db
-from VIP_INNOCENT.utils.database import (
+from devclone import YouTube, app
+from devclone.core.call import INNOCENT
+from devclone.misc import SUDOERS, db
+from devclone.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -28,9 +28,9 @@ from VIP_INNOCENT.utils.database import (
     is_muted,
     set_loop,
 )
-from VIP_INNOCENT.utils.decorators.language import languageCB
-from VIP_INNOCENT.utils.formatters import seconds_to_min
-from VIP_INNOCENT.utils.inline import (
+from devclone.utils.decorators.language import languageCB
+from devclone.utils.formatters import seconds_to_min
+from devclone.utils.inline import (
     close_markup,
     stream_markup,
     stream_markup_timer,
@@ -52,8 +52,8 @@ from VIP_INNOCENT.utils.inline import (
     queue_markup,
     panel_markup_1,
 )
-from VIP_INNOCENT.utils.stream.autoclear import auto_clean
-from VIP_INNOCENT.utils.thumbnails import get_thumb
+from devclone.utils.stream.autoclear import auto_clean
+from devclone.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
@@ -66,7 +66,7 @@ from config import (
 )
 from strings import get_string
 from config import lyrical
-from VIP_INNOCENT.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
+from devclone.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 wrong = {}
 
