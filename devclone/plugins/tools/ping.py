@@ -3,11 +3,11 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
 from config import *
-from VIP_INNOCENT import app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.utils import bot_sys_stats
-from VIP_INNOCENT.utils.decorators.language import language
-from VIP_INNOCENT.utils.inline import supp_markup
+from devclone import app
+from devclone.core.call import INNOCENT
+from devclone.utils import bot_sys_stats
+from devclone.utils.decorators.language import language
+from devclone.utils.inline import supp_markup
 from config import BANNED_USERS
 from config import PING_IMG_URL
 
