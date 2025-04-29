@@ -1,11 +1,11 @@
-from VIP_INNOCENT import app
+from devclone import app
 from pyrogram import Client, filters
 from pyrogram.errors import ChatIdInvalid
 from pyrogram.errors import ChatAdminRequired, ChatNotModified, ChatIdInvalid, FloodWait, InviteHashExpired, UserNotParticipant
 import os
 import json
 from pyrogram.types import Message
-from VIP_INNOCENT.misc import SUDOERS
+from devclone.misc import SUDOERS
 
 
 
