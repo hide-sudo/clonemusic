@@ -1,4 +1,4 @@
-from VIP_INNOCENT import app 
+from  import app 
 import asyncio
 import random
 import config
