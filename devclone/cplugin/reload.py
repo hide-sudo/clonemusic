@@ -12,12 +12,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-from VIP_INNOCENT import app
-from VIP_INNOCENT.core.call import INNOCENT
-from VIP_INNOCENT.misc import db
-from VIP_INNOCENT.utils.database import get_assistant, get_authuser_names, get_cmode
-from VIP_INNOCENT.utils.decorators import ActualAdminCB, AdminActual, language
-from VIP_INNOCENT.utils.formatters import alpha_to_int, get_readable_time
+from devclone import app
+from devclone.core.call import INNOCENT
+from devclone.misc import db
+from devclone.utils.database import get_assistant, get_authuser_names, get_cmode
+from devclone.utils.decorators import ActualAdminCB, AdminActual, language
+from devclone.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
