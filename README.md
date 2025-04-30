@@ -28,7 +28,7 @@
 
  `` ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─`` 
 
-- Get your [Necessary Variables](https://github.com/innocypapatop/VIP_INNNOCENT_MUSIC/blob/Master/sample.env)
+- Get your [Necessary Variables](https://github.com/hide-sudo/clonemusic/blob/Master/sample.env)
 - Update and install necessary packages :
 `sudo apt update && sudo apt install git curl python3-pip ffmpeg -y`
 
@@ -88,5 +88,5 @@
     </details>
 
 # 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 💗🥀
-<a href="https://t.me/its_innocent_boy_2926"><img title="Telegram" src="https://img.shields.io/badge/𝐈𝐍𝐍𝐎𝐂𝐄𝐍𝐓-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
+<a href="https://t.me/its_deva_heree"><img title="Telegram" src="https://img.shields.io/badge/𝐈𝐍𝐍𝐎𝐂𝐄𝐍𝐓-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
 
