@@ -1,7 +1,7 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from devclone import app
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.utils.decorators import AdminRightsCheck
 from devclone.utils.inline import close_markup
 from config import BANNED_USERS
@@ -79,7 +79,7 @@ async def music_off(chat_id: int):
 async def pause_admin(cli, message: Message, _, chat_id):
 
     await music_off(chat_id)
-    await INNOCENT.pause_stream(chat_id)
+    await dev.pause_stream(chat_id)
 
     buttons = [
         [
