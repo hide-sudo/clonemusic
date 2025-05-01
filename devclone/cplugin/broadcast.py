@@ -260,6 +260,6 @@ async def broadcast_message(client, message, _):
         except:
             pass
 
-# INNOCENT
+# dev
 
     IS_BROADCASTING = False
