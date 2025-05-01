@@ -2,7 +2,7 @@ from pyrogram import filters, Client
 from pyrogram.types import Message
 
 from devclone import app
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.misc import SUDOERS, db
 from devclone.utils import AdminRightsCheck
 from devclone.utils.database import is_active_chat, is_nonadmin_chat
@@ -37,7 +37,7 @@ async def playback(client, message: Message, _, chat_id):
         reply_markup=upl,
     )
 
-# INNOCENT
+# dev
 @Client.on_callback_query(filters.regex("SpeedUP") & ~BANNED_USERS)
 @languageCB
 async def del_back_playlist(client, callback_query, _):
@@ -86,7 +86,7 @@ async def del_back_playlist(client, callback_query, _):
         text=_["admin_32"].format(callback_query.from_user.mention),
     )
     try:
-        await INNOCENT.speedup_stream(
+        await dev.speedup_stream(
             chat_id,
             file_path,
             speed,
