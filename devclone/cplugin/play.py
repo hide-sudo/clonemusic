@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 from devclone.utils.database import get_assistant
 import config
 from devclone import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.misc import SUDOERS
 from devclone.utils.inline import panel_markup_clone
 from devclone.utils import seconds_to_min, time_to_seconds
@@ -406,7 +406,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await INNOCENT.stream_call(url)
+                await dev.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
@@ -590,7 +590,7 @@ async def play_commnd(
                 return await play_logs(message, streamtype=f"URL Searched Inline")
 
 
-# INNOCENT
+# dev
 @Client.on_callback_query(filters.regex("MusicStream") & ~BANNED_USERS)
 @languageCB
 async def play_music(client: Client, CallbackQuery, _):
@@ -664,8 +664,8 @@ async def play_music(client: Client, CallbackQuery, _):
     return await mystic.delete()
 
 
-@Client.on_callback_query(filters.regex("INNOCENTmousAdmin") & ~BANNED_USERS)
-async def INNOCENTmous_check(client: Client, CallbackQuery):
+@Client.on_callback_query(filters.regex("devmousAdmin") & ~BANNED_USERS)
+async def devmous_check(client: Client, CallbackQuery):
     try:
         await CallbackQuery.answer(
             "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
@@ -675,7 +675,7 @@ async def INNOCENTmous_check(client: Client, CallbackQuery):
         pass
 
 
-@Client.on_callback_query(filters.regex("INNOCENTPlaylists") & ~BANNED_USERS)
+@Client.on_callback_query(filters.regex("devPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client: Client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
@@ -819,7 +819,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from devclone import Carbon, YouTube
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.misc import db
 from devclone.utils.database import add_active_video_chat, is_active_chat
 from devclone.utils.exceptions import AssistantErr
@@ -831,7 +831,7 @@ from devclone.utils.inline import (
     stream_markup2,
     panel_markup_4,
 )
-from devclone.utils.pastebin import INNOCENTBin
+from devclone.utils.pastebin import devBin
 from devclone.utils.stream.queue import put_queue, put_queue_index
 from youtubesearchpython.__future__ import VideosSearch
 from devclone.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
@@ -864,7 +864,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await INNOCENT.force_stop_stream(chat_id)
+        await dev.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -912,7 +912,7 @@ async def stream(
                 except:
 
                     os.system(f"kill -9 {os.getpid()} && bash start")
-                await INNOCENT.join_call(
+                await dev.join_call(
                     chat_id,
                     original_chat_id,
                     file_path,
@@ -951,7 +951,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await INNOCENTBin(msg)
+            link = await devBin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -1002,7 +1002,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await INNOCENT.join_call(
+            await dev.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -1064,7 +1064,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await INNOCENT.join_call(chat_id, original_chat_id, file_path, video=None)
+            await dev.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -1116,7 +1116,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await INNOCENT.join_call(chat_id, original_chat_id, file_path, video=status)
+            await dev.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -1172,7 +1172,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await INNOCENT.join_call(
+            await dev.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -1229,7 +1229,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await INNOCENT.join_call(
+            await dev.join_call(
                 chat_id,
                 original_chat_id,
                 link,
