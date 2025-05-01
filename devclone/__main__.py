@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from devclone import LOGGER, app, userbot
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.misc import sudo
 from devclone.plugins import ALL_MODULES
 from devclone.utils.database import get_banned_users, get_gbanned
@@ -47,7 +47,7 @@ async def init():
     await INNOCENT.decorators()
     await restart_bots()
     LOGGER("devclone").info(
-        "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 𝗣𝗿𝗼𝗕𝗼t𝘀☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
+        "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 DEVA☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
     )
     await idle()
     await app.stop()
