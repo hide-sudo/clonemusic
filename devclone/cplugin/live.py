@@ -60,4 +60,4 @@ async def play_live_stream(client, CallbackQuery, _):
         return await mystic.edit_text("» ɴᴏᴛ ᴀ ʟɪᴠᴇ sᴛʀᴇᴀᴍ.")
     await mystic.delete()
 
-# INNOCENT
+# dev
