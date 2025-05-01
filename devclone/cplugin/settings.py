@@ -369,7 +369,7 @@ async def authusers_mar(client, CallbackQuery, _):
         return
 
 
-# INNOCENT
+# dev
 @Client.on_callback_query(filters.regex("VOMODECHANGE") & ~BANNED_USERS)
 @ActualAdminCB
 async def vote_change(client, CallbackQuery, _):
