@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from devclone import app
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 
 welcome = 20
 close = 30
@@ -11,4 +11,4 @@ close = 30
 @app.on_message(filters.video_chat_started, group=welcome)
 @app.on_message(filters.video_chat_ended, group=close)
 async def welcome(_, message: Message):
-    await INNOCENT.stop_stream_force(message.chat.id)
+    await dev.stop_stream_force(message.chat.id)
