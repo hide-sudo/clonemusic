@@ -39,7 +39,7 @@ async def post(url: str, *args, **kwargs):
         return data
 
 
-async def INNOCENTBin(content):
+async def devBin(content):
     url ="https://pastebin.com/api/api_post.php"
     data = {"api_dev_key":"9Rfu50iV5l3EuRWATw7EDLuC37RED-C4","api_paste_code": content,"api_option": "paste"}
     response = requests.post(url, data=data)
