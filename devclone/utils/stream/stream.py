@@ -6,13 +6,13 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from devclone import Carbon, YouTube, app
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.misc import db
 from devclone.utils.database import add_active_video_chat, is_active_chat
 from devclone.utils.exceptions import AssistantErr
 from devclone.utils.inline import aq_markup, close_markup, stream_markup
 from devclone.utils.stream.queue import put_queue, put_queue_index
-from devclone.utils.pastebin import INNOCENTBin
+from devclone.utils.pastebin import devBin
 from devclone.utils.thumbnails import get_thumb
 
 
@@ -32,7 +32,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await INNOCENT.force_stop_stream(chat_id)
+        await dev.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -79,7 +79,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_14"])
-                await INNOCENT.join_call(
+                await dev.join_call(
                     chat_id,
                     original_chat_id,
                     file_path,
@@ -116,7 +116,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await INNOCENTBin(msg)
+            link = await devBin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -165,7 +165,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await INNOCENT.join_call(
+            await dev.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -225,7 +225,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await INNOCENT.join_call(chat_id, original_chat_id, file_path, video=None)
+            await dev.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -277,7 +277,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await INNOCENT.join_call(chat_id, original_chat_id, file_path, video=status)
+            await dev.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -333,7 +333,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await INNOCENT.join_call(
+            await dev.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -391,7 +391,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await INNOCENT.join_call(
+            await dev.join_call(
                 chat_id,
                 original_chat_id,
                 link,
