@@ -44,7 +44,7 @@ def circle(pfp, size=(500, 500)):
     return pfp
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("devclone/assets/INNOCENTWEL.png")
+    background = Image.open("devclone/assets/devWEL.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((825, 824))
@@ -73,7 +73,7 @@ async def greet_group(_, member: ChatMemberUpdated):
             user.photo.big_file_id, file_name=f"welcome#{user.id}.png"
         )
     except AttributeError:
-        pic = "devclone/assets/INNOCENTWEL.png"
+        pic = "devclone/assets/devWEL.png"
     if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
         try:
             await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
@@ -92,7 +92,7 @@ async def greet_group(_, member: ChatMemberUpdated):
 ๏ 𝗡𝗔𝗠𝗘 ➠ {user.mention}
 ๏ 𝗜𝗗 ➠ {user.id}
 ๏ 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 ➠ @{user.username}
-๏ 𝐌𝐀𝐃𝐄 𝐁𝐘 ➠ [𝑰𝒏𝒏𝒐𝒄𝒆𝒏𝒕](https://t.me/{config.OWNER_USERNAME})
+๏ 𝐌𝐀𝐃𝐄 𝐁𝐘 ➠ [dev�](https://t.me/{config.OWNER_USERNAME})
 ➖➖➖➖➖➖➖➖➖➖➖
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/Sustumm_music_bot?startgroup=true")]])
