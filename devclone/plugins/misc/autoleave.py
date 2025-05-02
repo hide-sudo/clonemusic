@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from devclone import app
-from devclone.core.call import INNOCENT, autoend
+from devclone.core.call import dev, autoend
 from devclone.utils.database import get_client, is_active_chat, is_autoend
 
 
@@ -57,7 +57,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await INNOCENT.stop_stream(chat_id)
+                    await dev.stop_stream(chat_id)
                 except:
                     continue
                 try:
