@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from config import *
 from devclone import app
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.utils import bot_sys_stats
 from devclone.utils.decorators.language import language
 from devclone.utils.inline import supp_markup
@@ -20,7 +20,7 @@ async def ping_com(client, message: Message, _):
         photo=PING_IMG_URL,
         caption=_["ping_1"].format(app.mention),
     )
-    pytgping = await INNOCENT.ping()
+    pytgping = await dev.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
