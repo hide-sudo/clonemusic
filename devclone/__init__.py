@@ -1,4 +1,4 @@
-from devclone.core.bot import INNOCENT
+from devclone.core.bot import dev
 from devclone.core.dir import dirr
 from devclone.core.git import git
 from devclone.core.userbot import Userbot
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = INNOCENT()
+app = dev()
 api = SafoneAPI()
 userbot = Userbot()
 
