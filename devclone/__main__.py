@@ -34,9 +34,9 @@ async def init():
         importlib.import_module("devclone.plugins" + all_module)
     LOGGER("devclone.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
     await userbot.start()
-    await INNOCENT.start()
+    await dev.start()
     try:
-        await INNOCENT.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await dev.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("devclone").error(
             "𝗣𝗹𝗭 𝗦𝗧𝗔𝗥𝗧 𝗬𝗢𝗨𝗥 𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗩𝗢𝗜𝗖𝗘𝗖𝗛𝗔𝗧\𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\n𝗠𝗨𝗦𝗜𝗖 𝗕𝗢𝗧 𝗦𝗧𝗢𝗣........"
@@ -44,7 +44,7 @@ async def init():
         exit()
     except:
         pass
-    await INNOCENT.decorators()
+    await dev.decorators()
     await restart_bots()
     LOGGER("devclone").info(
         "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 DEVA☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
