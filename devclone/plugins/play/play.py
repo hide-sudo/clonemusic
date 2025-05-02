@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from devclone import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app, LOGGER
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.utils import seconds_to_min, time_to_seconds
 from devclone.utils.channelplay import get_channeplayCB
 from devclone.utils.decorators.language import languageCB
@@ -297,7 +297,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await INNOCENT.stream_call(url)
+                await dev.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
