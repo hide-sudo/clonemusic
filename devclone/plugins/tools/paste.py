@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardButton
 from aiohttp import ClientSession
 from devclone import app
 from devclone.utils.errors import capture_err
-from devclone.utils.pastebin import INNOCENTBin
+from devclone.utils.pastebin import devBin
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
 
