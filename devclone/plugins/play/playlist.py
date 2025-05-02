@@ -19,7 +19,7 @@ from devclone.utils.inline.playlist import (
     get_playlist_markup,
     warning_markup,
 )
-from devclone.utils.pastebin import INNOCENTBin
+from devclone.utils.pastebin import devBin
 from devclone.utils.stream.stream import stream
 
 # Define a dictionary to track the last message timestamp for each user
@@ -127,7 +127,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await INNOCENTBin(msg)
+    link = await devBin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -661,7 +661,7 @@ async def add_playlist(client, CallbackQuery, _):
     )
 
 
-@app.on_callback_query(filters.regex("INNOCENT_playlist") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("dev_playlist") & ~BANNED_USERS)
 @languageCB
 async def add_playlists(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
