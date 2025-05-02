@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from devclone import app
-from devclone.core.call import INNOCENT
+from devclone.core.call import dev
 from devclone.misc import SUDOERS, db
 from devclone.utils import AdminRightsCheck
 from devclone.utils.database import is_active_chat, is_nonadmin_chat
@@ -94,7 +94,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         text=_["admin_32"].format(CallbackQuery.from_user.mention),
     )
     try:
-        await INNOCENT.speedup_stream(
+        await dev.speedup_stream(
             chat_id,
             file_path,
             speed,
